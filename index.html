@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>더바이오 GEO 효과측정 대시보드 v2</title>
+<title>GEO - AI 검색 유입 분석 대시보드</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.js" integrity="sha384-iU8HYtnGQ8Cy4zl7gbNMOhsDTTKX02BTXptVP/vqAWIaTfM7isw76iyZCsjL2eVi" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/theme/mermaid.min.css" integrity="sha384-WnEOx7uyiWHXHQ99kfQdcjy6SiWTHNon0Jz1e3ovCUFcpZaO3jFZyoNYJ/GFHLI" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/gridjs@5.0.2/dist/gridjs.umd.js" integrity="sha384-/XXDzxe4FsGiAe50i/u9pY/Vy/uX654MHB1xoc1BJNnH1WXHhqHga9g3q5tF4gj7" crossorigin="anonymous"></script>
@@ -291,7 +291,7 @@ button:hover{background:#f0f0ec;}
 </div>
 
 <div class="insight-box v5-summary-insight" style="margin-top:14px;">
-  <strong>GEO 핵심 인사이트 (더바이오, 28일)</strong><br>
+  <strong>GEO 핵심 인사이트 (샘플, 28일)</strong><br>
   <span id="summaryInsightText">데이터를 읽는 중입니다.</span>
 </div>
 
@@ -699,7 +699,7 @@ setCard(1,sample?'최다 유입 AI 엔진':ai?'최다 유입 AI 엔진':'최다 
 setCard(2,ai?'딥링크 유입 비율':'딥링크 유입',ai?data.deep+'%':'—',ai?'개별 기사 직접 인용':'AI 소스·랜딩 경로 필요');
 setCard(3,ai?'고관여 AI 세션':'평균 참여 시간',ai?fmt(data.high):(data.avgTime?Math.round(data.avgTime)+'초':'—'),ai?(data.highSub||'추정값'):'AI 한정 관여도는 별도 차원 필요');
 setCard(4,sample?'신규 독자':'신규 사용자',sample&&data.newUserTotal?fmt(data.newUserTotal)+'명':'—',sample&&data.newUserTotal?'AI 유입의 '+(data.newUserTotal/(data.sessionTotal||data.sessions||1)*100).toFixed(1)+'% 첫 방문':'새 사용자 수 차원 필요');setCard(5,sample?'Top 토픽':'Top 콘텐츠 주제',data.topic||'분류 없음',data.topicSub||'CSV 페이지 경로 기반');
-if(insight)insight.innerHTML=sample?'<strong>GEO 5지표 핵심 인사이트 (더바이오, 28일)</strong><br>① <strong>ChatGPT 압도적 1위</strong> — 47.1%(511세션). 바이오·제약 전문 질의에서 ChatGPT 의존도 높음.<br>② <strong>딥링크 83%</strong> — AI가 홈이 아닌 개별 기사 URL을 직접 인용. GEO 최적화 효과 확인됨.<br>③ <strong>신약 임상/승인 콘텐츠 54%</strong> — AI 인용을 독점하는 토픽. 기술이전·특허 기사도 고관여 유형.<br>④ <strong>Perplexity 개선 여지</strong> — 1.1%(12세션). 팩트체크형 심층 기사 강화 시 빠른 성장 가능.':'<strong>CSV 데이터 읽기 결과</strong><br>① <strong>'+(top?esc(top.name)+'가 최다 유입 · '+fmt(top.total)+'명':'유입 소스 정보 없음')+'</strong> — 입력 파일에서 인식된 신호입니다.<br>② <strong>'+(data.pageMetricLabel||'페이지 값')+' 기준 상위 '+(data.pages||[]).length+'개 랜딩</strong> — 방문 페이지 또는 페이지 블록 기준입니다.<br>③ <strong>'+((data.cities&&data.cities[0])?esc(data.cities[0].name)+' '+fmt(data.cities[0].value)+'명':'국가·지역 정보 없음')+'</strong> — 상위 지역 신호입니다.<br>④ <strong>AI 인용·이탈률</strong> — 해당 차원이 있을 때만 계산하며 없으면 추정하지 않습니다.';
+if(insight)insight.innerHTML=sample?'<strong>GEO 5지표 핵심 인사이트 (샘플, 28일)</strong><br>① <strong>ChatGPT 압도적 1위</strong> — 47.1%(511세션). 바이오·제약 전문 질의에서 ChatGPT 의존도 높음.<br>② <strong>딥링크 83%</strong> — AI가 홈이 아닌 개별 기사 URL을 직접 인용. GEO 최적화 효과 확인됨.<br>③ <strong>신약 임상/승인 콘텐츠 54%</strong> — AI 인용을 독점하는 토픽. 기술이전·특허 기사도 고관여 유형.<br>④ <strong>Perplexity 개선 여지</strong> — 1.1%(12세션). 팩트체크형 심층 기사 강화 시 빠른 성장 가능.':'<strong>CSV 데이터 읽기 결과</strong><br>① <strong>'+(top?esc(top.name)+'가 최다 유입 · '+fmt(top.total)+'명':'유입 소스 정보 없음')+'</strong> — 입력 파일에서 인식된 신호입니다.<br>② <strong>'+(data.pageMetricLabel||'페이지 값')+' 기준 상위 '+(data.pages||[]).length+'개 랜딩</strong> — 방문 페이지 또는 페이지 블록 기준입니다.<br>③ <strong>'+((data.cities&&data.cities[0])?esc(data.cities[0].name)+' '+fmt(data.cities[0].value)+'명':'국가·지역 정보 없음')+'</strong> — 상위 지역 신호입니다.<br>④ <strong>AI 인용·이탈률</strong> — 해당 차원이 있을 때만 계산하며 없으면 추정하지 않습니다.';
 var sov=q('sovBars');sov.innerHTML=items.length?items.map(function(x,i){var share=total?x.total/total*100:0,w=items[0]?x.total/items[0].total*100:0;return '<div class="sov-row"><div class="sov-label">'+esc(x.name)+'</div><div class="sov-bar-bg"><div class="sov-bar-fill" style="width:'+w+'%;background:'+color(x,i)+'">'+(share>=7?pct(share):'')+'</div></div><div class="sov-pct">'+pct(share)+'</div><div class="sov-cnt">'+fmt(x.total)+'</div></div>'}).join(''):'<div style="font-size:11px;color:#6b6b67;padding:14px 0">유입 소스/AI 엔진 차원이 없습니다.</div>';
 leg('stackLegend',ai?[['referral','#378ADD'],['ai-assistant','#7F77DD'],['(not set)','#888780']]:[['desktop','#378ADD'],['mobile','#1D9E75'],['tablet','#D85A30'],['smart tv','#EF9F27']]);
 if(ai)q('stackChart').innerHTML=items.map(function(x){var t=x.ref+x.ai+x.ns||1;return '<div class="stack-row"><label>'+esc(x.name)+'</label><div class="stack-track"><div class="stack-seg ref" style="width:'+x.ref/t*100+'%">'+(x.ref||'')+'</div><div class="stack-seg ai" style="width:'+x.ai/t*100+'%">'+(x.ai||'')+'</div><div class="stack-seg ns" style="width:'+x.ns/t*100+'%">'+(x.ns||'')+'</div></div></div>'}).join('');else if((data.deviceBreakdown||[]).length){var dt=data.deviceBreakdown.reduce(function(s,x){return s+x.value},0)||1;q('stackChart').innerHTML='<div class="stack-row"><label>device</label><div class="stack-track">'+data.deviceBreakdown.map(function(x,i){var c=['#378ADD','#1D9E75','#D85A30','#EF9F27'][i%4];return '<div class="stack-seg" style="width:'+x.value/dt*100+'%;background:'+c+';color:#fff">'+(x.value/dt>.08?x.name:'')+'</div>'}).join('')+'</div></div><div style="font-size:10px;color:#6b6b67;margin-top:8px">'+data.deviceBreakdown.map(function(x){return x.name+' '+fmt(x.value)}).join(' · ')+'</div>'}else q('stackChart').innerHTML='<div style="font-size:11px;color:#6b6b67;padding:14px 0">기기·엔진 구성 차원이 없습니다.</div>';
