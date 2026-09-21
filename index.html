@@ -94,7 +94,36 @@ button:hover{background:#f0f0ec;}
 .br-bar{display:inline-block;height:6px;border-radius:3px;vertical-align:middle;margin-right:4px;}
 @media(max-width:1100px){.cards{grid-template-columns:repeat(3,1fr);}}
 @media(max-width:780px){.cards{grid-template-columns:repeat(2,1fr);}.row2{grid-template-columns:1fr;}}
-<style id="csvStyle">.csv-panel{display:grid;grid-template-columns:1.04fr .96fr;gap:14px;align-items:stretch;background:#e4f1eb;border:.5px solid #b9d9cd;border-radius:12px;padding:14px 16px;margin:0 0 14px}.csv-copy{display:flex;flex-direction:column;justify-content:center;padding:4px 3px}.csv-kicker{font-size:10px;letter-spacing:.14em;color:#0F6E56;font-weight:700;margin-bottom:6px}.csv-copy h2{font-size:14px;font-weight:600;margin:0 0 4px}.csv-copy p{font-size:11px;line-height:1.6;color:#4f655f;max-width:540px}.csv-drop{border:1px dashed #7cb6a4;background:#fff;border-radius:10px;min-height:112px;padding:12px 14px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;transition:.18s}.csv-drop.is-over,.csv-drop:hover{border-color:#0F6E56;background:#fbfffc;transform:translateY(-1px)}.csv-drop-icon{width:27px;height:27px;border-radius:8px;background:#0F6E56;color:#fff;display:grid;place-items:center;font-size:17px;margin-bottom:5px}.csv-drop strong{font-size:12px}.csv-drop span{font-size:10px;color:#6b6b67;margin-top:2px}.csv-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:8px}.csv-actions button,.csv-paste-row button{font-size:10px;padding:5px 9px;border:.5px solid #c8c8c4;border-radius:7px;background:#fff;color:#1a1a18;cursor:pointer}.csv-actions button:first-child,.csv-paste-row button{background:#0F6E56;color:#fff;border-color:#0F6E56}.csv-actions button.primary{background:#173b5f;color:#fff;border-color:#173b5f;box-shadow:0 4px 10px rgba(23,59,95,.18);font-weight:700}.csv-actions button:hover,.csv-paste-row button:hover{filter:brightness(1.08)}#csvInput{display:none}.csv-paste-row{display:none;gap:6px;align-items:stretch;margin-top:7px}.csv-paste-row.open{display:flex}.csv-paste-row textarea{flex:1;min-height:52px;resize:vertical;border:.5px solid #b9d9cd;border-radius:7px;padding:7px 8px;font-size:10px;font-family:inherit}.csv-paste-row button{padding:0 12px}.csv-status{display:flex;align-items:center;gap:6px;font-size:10px;color:#4f655f;margin-top:7px}.csv-status i{display:block;width:6px;height:6px;border-radius:50%;background:#1D9E75}.csv-status i.warn{background:#D85A30}.csv-file-list{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-top:8px}.csv-file-chip{padding:4px 7px;border:1px solid #c8ddd3;border-radius:999px;background:#f4fbf7;color:#386357;font-size:9px}.csv-file-chip strong{color:#0F6E56;margin-right:3px}@media(max-width:780px){.csv-panel{grid-template-columns:1fr}}</style>
+<style id="csvStyle">.csv-panel{display:grid;grid-template-columns:1.04fr .96fr;gap:14px;align-items:stretch;background:#e4f1eb;border:.5px solid #b9d9cd;border-radius:12px;padding:14px 16px;margin:0 0 14px}.csv-copy{display:flex;flex-direction:column;justify-content:center;padding:4px 3px}.csv-kicker{font-size:10px;letter-spacing:.14em;color:#0F6E56;font-weight:700;margin-bottom:6px}.csv-copy h2{font-size:14px;font-weight:600;margin:0 0 4px}.csv-copy p{font-size:11px;line-height:1.6;color:#4f655f;max-width:540px}.csv-drop{border:1px dashed #7cb6a4;background:#fff;border-radius:10px;min-height:112px;padding:12px 14px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;transition:.18s}.csv-drop.is-over,.csv-drop:hover{border-color:#0F6E56;background:#fbfffc;transform:translateY(-1px)}.csv-drop-icon{width:27px;height:27px;border-radius:8px;background:#0F6E56;color:#fff;display:grid;place-items:center;font-size:17px;margin-bottom:5px}.csv-drop strong{font-size:12px}.csv-drop span{font-size:10px;color:#6b6b67;margin-top:2px}.csv-actions{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:8px}.csv-actions button,.csv-paste-row button{font-size:10px;padding:5px 9px;border:.5px solid #c8c8c4;border-radius:7px;background:#fff;color:#1a1a18;cursor:pointer}.csv-actions button:first-child,.csv-paste-row button{background:#0F6E56;color:#fff;border-color:#0F6E56}.csv-actions button.primary{background:#173b5f;color:#fff;border-color:#173b5f;box-shadow:0 4px 10px rgba(23,59,95,.18);font-weight:700}.csv-actions button:hover,.csv-paste-row button:hover{filter:brightness(1.08)}#csvInput{display:none}.csv-paste-row{display:none;gap:6px;align-items:stretch;margin-top:7px}.csv-paste-row.open{display:flex}.csv-paste-row textarea{flex:1;min-height:52px;resize:vertical;border:.5px solid #b9d9cd;border-radius:7px;padding:7px 8px;font-size:10px;font-family:inherit}.csv-paste-row button{padding:0 12px}.csv-status{display:flex;align-items:center;gap:6px;font-size:10px;color:#4f655f;margin-top:7px}.csv-status i{display:block;width:6px;height:6px;border-radius:50%;background:#1D9E75}.csv-status i.warn{background:#D85A30}.csv-file-list{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;margin-top:8px}.csv-file-chip{padding:4px 7px;border:1px solid #c8ddd3;border-radius:999px;background:#f4fbf7;color:#386357;font-size:9px}.csv-file-chip strong{color:#0F6E56;margin-right:3px}@media(max-width:780px){.csv-panel{grid-template-columns:1fr}}.mx-panel{margin-top:14px;min-height:0}
+.mx-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin-bottom:10px}
+.mx-ctl label{display:block;font-size:10.5px;font-weight:700;color:#475569;margin-bottom:4px}
+.mx-row{display:flex;gap:6px;flex-wrap:wrap}.mx-row input{flex:1;min-width:160px;font-size:12px;padding:6px 10px;border:0.5px solid #c8c8c4;border-radius:8px}
+.mx-row button.primary{background:#0f172a;color:#fff;border-color:#0f172a}
+.mx-status{font-size:11.5px;line-height:1.7;color:#475569;background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:9px 12px;margin-bottom:12px}
+.mx-status.warn{background:#fff7ed;border-color:#fed7aa;color:#92400e}.mx-status.err{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.mx-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:12px}
+.mx-kpi{border:1px solid #e0e0dc;border-radius:10px;padding:11px 12px;background:#fff}
+.mx-kpi span{display:block;font-size:10.5px;color:#64748b}.mx-kpi b{display:block;font-size:22px;font-weight:700;margin:3px 0 1px;color:#0f172a}
+.mx-kpi i{font-style:normal;font-size:10.5px;color:#94a3b8}.mx-kpi.stale{opacity:.55}.mx-kpi.stale i{color:#b45309}
+.mx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;margin-bottom:12px}
+.mx-box{border:1px solid #e0e0dc;border-radius:10px;padding:12px;background:#fff;min-width:0}
+.mx-box h4{font-size:12px;font-weight:700;margin-bottom:8px;color:#0f172a}
+.mx-chart{position:relative;height:210px}
+.mx-note{font-size:10.5px;color:#94a3b8;margin-top:6px;line-height:1.6}
+.mx-table-wrap{overflow-x:auto}
+.mx-table{width:100%;border-collapse:collapse;font-size:11.5px}
+.mx-table th{text-align:left;font-weight:600;color:#64748b;font-size:10.5px;padding:5px 6px;border-bottom:1px solid #e2e8f0;white-space:nowrap}
+.mx-table td{padding:6px;border-bottom:1px solid #f1f5f9;vertical-align:top}
+.mx-table td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mx-tag{display:inline-block;font-size:10px;padding:1px 7px;border-radius:10px;background:#f1f5f9;color:#475569;white-space:nowrap}
+.mx-tag.bad{background:#fee2e2;color:#991b1b}.mx-tag.mid{background:#fef3c7;color:#92400e}.mx-tag.good{background:#dcfce7;color:#166534}
+.mx-list{list-style:none;font-size:11.5px}.mx-list li{padding:6px 0;border-bottom:1px dashed #e2e8f0}
+.mx-list small{color:#94a3b8}
+.mx-empty{font-size:11.5px;color:#94a3b8}
+.mx-chart-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px}
+.mx-chart-empty[hidden]{display:none}
+.mx-table .mx-tag{white-space:normal;line-height:1.5}
+</style>
 </style>
 <style>
 /* 실행형 GEO 플랫폼 레이어 */
@@ -463,7 +492,29 @@ button:hover{background:#f0f0ec;}
 <section id="view-visibility" class="platform-view">
   <div class="content-hero"><div><div class="platform-kicker">VISIBILITY / IMPRESSION</div><h2>GA4 유입과 AI 인용 품질을 구분해서 봅니다</h2><p>현재 CSV는 실제 사이트 유입을 보여줍니다. AI 답변 안에서 얼마나, 어디에, 어떤 품질로 인용되는지는 별도 인용 감사 데이터로 측정합니다.</p></div><div class="hero-mark">VIS</div></div>
   <div class="metric-grid"><article class="metric-card"><h3>위치 보정 단어 수</h3><div class="metric-value">PAWC</div><p>최종 AI 답변에서 내 소스가 인용된 단어 수를 세고, 답변 앞부분에 나올수록 더 높은 가중치를 부여합니다.</p><div class="field-list"><span>인용 단어 수</span><span>인용 순서</span><span>답변 전체 길이</span></div></article><article class="metric-card"><h3>주관적 인상</h3><div class="metric-value">Impression</div><p>인용의 관련성·영향력·신뢰도처럼 실제 사용자가 느끼는 노출 품질을 평가합니다.</p><div class="field-list"><span>관련성</span><span>영향력</span><span>신뢰도</span></div></article></div>
-  <div class="platform-disclaimer"><strong>현재 측정 범위:</strong> GA4 CSV만으로는 PAWC와 주관적 인상을 계산할 수 없습니다. 이 화면에서는 GA4 유입 지표와 AI 응답 인용 지표를 섞어 표시하지 않고, 각각의 데이터 상태를 분리해 관리합니다.</div>
+  <div class="platform-disclaimer"><strong>현재 측정 범위:</strong> GA4 CSV만으로는 PAWC와 주관적 인상을 계산할 수 없습니다. GA4 유입 지표와 AI 응답 인용 지표는 섞지 않고 따로 관리하되, 아래 <b>분석기 연동</b>에서 엔진별로 나란히 놓아 어느 단계(방문·인용·유입)에서 끊겼는지 봅니다.</div>
+  <div class="platform-panel mx-panel" id="mxPanel">
+    <div class="platform-kicker">CRAWL → CITE → VISIT / GEO ANALYZER LINK</div>
+    <h3>AI 크롤러 방문 · AI 인용 · GA4 유입을 한 줄로 잇습니다</h3>
+    <p class="panel-lead">GEO Score Analyzer의 측정 루프 데이터(엔진별 인용 기록·AI 크롤러 방문·LLMO 점검·개선 실험)를 불러와 이 대시보드의 GA4 AI 유입과 엔진별로 나란히 놓습니다. 크롤링이 와야 인용이 오고, 인용이 돼야 유입이 옵니다 — 어느 단계에서 끊겼는지가 다음 작업입니다.</p>
+    <div class="mx-controls">
+      <div class="mx-ctl"><label for="mxServer">분석기 서버 주소</label><div class="mx-row"><input id="mxServer" type="url" placeholder="http://localhost:3000"><button type="button" id="mxFetch" class="primary">불러오기</button></div></div>
+      <div class="mx-ctl"><label>또는 파일</label><div class="mx-row"><button type="button" id="mxBundleBtn">내보내기 JSON 올리기</button><button type="button" id="mxLogBtn">서버 접속 로그 올리기</button><input id="mxBundleFile" type="file" accept=".json,application/json" hidden><input id="mxLogFile" type="file" accept=".log,.txt,.csv" hidden></div></div>
+    </div>
+    <div class="mx-status" id="mxStatus">아직 불러온 데이터가 없습니다. 분석기 "🧪 측정 루프" 탭의 <b>대시보드용 내보내기</b> 파일을 올리거나, 분석기 서버가 켜져 있으면 주소로 불러오세요. 접속 로그만 올려도 크롤러 방문은 이 브라우저 안에서 바로 집계합니다(외부 전송 없음).</div>
+    <div id="mxBody" hidden>
+      <div class="mx-kpis" id="mxKpis"></div>
+      <div class="mx-grid">
+        <div class="mx-box"><h4>AI 크롤러 방문 (최근 30일, 용도별)</h4><div class="mx-chart"><canvas id="mxCrawlChart" aria-label="날짜별 AI 크롤러 방문 수"></canvas><p class="mx-empty mx-chart-empty" id="mxCrawlEmpty" hidden>최근 30일 접속 로그가 없습니다. "서버 접속 로그 올리기"로 추가하세요.</p></div><p class="mx-note" id="mxCrawlNote"></p></div>
+        <div class="mx-box"><h4>엔진별 퍼널 — 방문 · 인용 · 유입</h4><div class="mx-table-wrap"><table class="mx-table" id="mxFunnel"></table></div><p class="mx-note">방문 = 올린 접속 로그 기간 전체의 해당 회사 봇 방문 수, 인용 = 질문별 최신 기록 기준 인용률, 유입 = 위 GA4 CSV의 AI 엔진 세션. 구글 AI 개요·네이버 AI 브리핑은 GA4에서 일반 검색 유입과 구분되지 않아 유입 칸을 비웁니다.</p></div>
+      </div>
+      <div class="mx-grid">
+        <div class="mx-box"><h4>개선 실험</h4><div id="mxExps"></div></div>
+        <div class="mx-box"><h4>LLMO 점검 (모델이 매체를 아는가)</h4><div id="mxLlmo"></div></div>
+      </div>
+    </div>
+  </div>
+
   <div class="platform-panel"><div class="platform-kicker">AI ANSWER AUDIT / NEXT DATASET</div><h3>추가하면 좋은 AI 인용 감사 CSV</h3><p class="panel-lead">AI 엔진별 질의 테스트 결과를 아래 형태로 넣으면 향후 가시성 지표를 확장할 수 있습니다.</p><div class="field-list"><span>측정일</span><span>AI 엔진</span><span>질의어</span><span>인용 URL</span><span>인용 순서</span><span>인용 단어 수</span><span>답변 전체 단어 수</span><span>주제</span><span>신뢰도 점수</span></div></div>
 </section>
 
@@ -1162,5 +1213,141 @@ q=function(id){return document.getElementById(id)||{textContent:'',innerHTML:''}
   renderChannelContextFixed();
 })();
 </script>
+<script>
+/* GEO Score Analyzer 측정 루프 연동 (크롤러 방문 → AI 인용 → GA4 유입) */
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  if(!$('mxPanel'))return;
+  var STORE='geoMxServer', bundle=null, chart=null;
+  var esc=function(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+  var num=function(v){return Number(v||0).toLocaleString('ko-KR')};
+  var day=function(iso){return iso?String(iso).slice(0,10):'-'};
+  var ageDays=function(iso){return iso?(Date.now()-new Date(iso).getTime())/864e5:Infinity};
+  try{var saved=localStorage.getItem(STORE);if(saved)$('mxServer').value=saved}catch(e){}
+
+  // ── 접속 로그 → 날짜·봇별 방문 (분석기 lib/measure.js 와 같은 규칙) ──
+  var LOG_BOTS=[['OAI-SearchBot','search'],['ChatGPT-User','user'],['GPTBot','training'],['Claude-SearchBot','search'],['Claude-User','user'],['ClaudeBot','training'],['Perplexity-User','user'],['PerplexityBot','search'],['Meta-ExternalAgent','training'],['Applebot-Extended','training'],['Bytespider','training'],['CCBot','training'],['Googlebot','engine'],['bingbot','engine'],['Yeti','engine']];
+  var MON={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
+  function lineDay(l){var m=l.match(/\[(\d{1,2})\/([A-Za-z]{3})\/(\d{4}):/);if(m&&MON[m[2].toLowerCase()])return m[3]+'-'+String(MON[m[2].toLowerCase()]).padStart(2,'0')+'-'+m[1].padStart(2,'0');m=l.match(/(20\d{2})-(\d{2})-(\d{2})[T\s]/);return m?m[1]+'-'+m[2]+'-'+m[3]:''}
+  function parseLog(text){var c={},lines=0,matched=0;String(text||'').split(/\r?\n/).forEach(function(l){if(!l.trim())return;lines++;var low=l.toLowerCase(),hit=null;for(var i=0;i<LOG_BOTS.length;i++){if(low.indexOf(LOG_BOTS[i][0].toLowerCase())>=0){hit=LOG_BOTS[i];break}}if(!hit)return;var d=lineDay(l);if(!d)return;matched++;var k=d+'|'+hit[0];c[k]=(c[k]||0)+1});
+    var rows=Object.keys(c).map(function(k){var p=k.split('|');return{day:p[0],bot:p[1],grp:LOG_BOTS.filter(function(b){return b[0]===p[1]})[0][1],hits:c[k]}});
+    return{lines:lines,matched:matched,series:crawlerSeries(rows)}}
+  function crawlerSeries(rows){var by={},bot={};rows.forEach(function(r){var e=by[r.day]||(by[r.day]={day:r.day,training:0,search:0,user:0,engine:0});e[r.grp]+=r.hits;bot[r.bot]=(bot[r.bot]||0)+r.hits});
+    var series=Object.keys(by).sort().map(function(k){return by[k]});return{series:series,byBot:bot,lastDay:series.length?series[series.length-1].day:''}}
+
+  // ── 회사(엔진) 단위 매핑: 봇 · 인용 기록 엔진 · GA4 엔진명 ──
+  var VENDORS=[
+    {name:'ChatGPT',bots:['GPTBot','OAI-SearchBot','ChatGPT-User'],cite:['manual:chatgpt'],ga:/chatgpt|openai/i},
+    {name:'Claude',bots:['ClaudeBot','Claude-SearchBot','Claude-User'],cite:['manual:claude'],ga:/claude|anthropic/i},
+    {name:'Perplexity',bots:['PerplexityBot','Perplexity-User'],cite:['manual:perplexity','api'],ga:/perplexity/i},
+    {name:'Copilot (빙)',bots:['bingbot'],cite:['manual:copilot'],ga:/copilot|bing/i},
+    {name:'Gemini',bots:['Googlebot'],cite:['manual:gemini'],ga:/gemini|bard/i,shareBot:true},
+    {name:'구글 AI 개요',bots:['Googlebot'],cite:['manual:google_aio'],ga:null,shareBot:true},
+    {name:'네이버 AI 브리핑',bots:['Yeti'],cite:['manual:naver_briefing'],ga:null}
+  ];
+  function ga4Sessions(re){if(!re)return null;var d=window.data||window.geoDashboardData||{};var eng=d.engines||[];if(!eng.length)return null;
+    var s=0,hit=false;eng.forEach(function(e){if(re.test(e.name||'')){hit=true;s+=Number(e.sessions!=null?e.sessions:(e.total||e.value||0))}});return hit?s:0}
+  function ga4Label(){var d=window.data||window.geoDashboardData||{};return d.mode==='sample'?'GA4 샘플값':'GA4 CSV'}
+
+  function setStatus(html,cls){var s=$('mxStatus');s.className='mx-status'+(cls?' '+cls:'');s.innerHTML=html}
+
+  function load(b,source){
+    if(!b||(b.format&&b.format!=='geo-measure-bundle'))throw new Error('GEO Score Analyzer 내보내기 파일이 아닙니다.');
+    bundle=Object.assign({engines:[],citations:[],crawlers:{series:[],byBot:{}},llmo:[],experiments:[],staleDays:14},bundle&&source==='log'?bundle:{},b);
+    render();
+    var warn=[],sd=bundle.staleDays||14;
+    if(bundle.exportedAt&&ageDays(bundle.exportedAt)>sd)warn.push('내보낸 지 '+Math.floor(ageDays(bundle.exportedAt))+'일 지난 데이터입니다');
+    if(bundle.crawlers.lastDay&&ageDays(bundle.crawlers.lastDay+'T23:59:59')>7)warn.push('크롤러 로그 마지막 날짜가 '+bundle.crawlers.lastDay+'입니다');
+    setStatus('<b>'+esc(source==='server'?'분석기 서버':source==='log'?'접속 로그':'내보내기 파일')+'</b>에서 불러옴'+(bundle.exportedAt?' · 내보낸 시각 '+esc(new Date(bundle.exportedAt).toLocaleString('ko-KR')):'')+(warn.length?' · ⚠️ '+esc(warn.join(' · '))+' — 오래된 값은 어떤 기준이든 통과해 버리니 최신 데이터로 다시 불러오세요.':''),warn.length?'warn':'')
+  }
+
+  function render(){
+    if(!bundle)return;$('mxBody').hidden=false;
+    var sd=bundle.staleDays||14, cr=bundle.crawlers||{series:[]};
+    // KPI
+    var eng=bundle.engines||[],n=0,c=0,last='';eng.forEach(function(e){n+=e.n;c+=e.cited;if(e.lastAt>last)last=e.lastAt});
+    var s30=(cr.series||[]).filter(function(x){return ageDays(x.day+'T00:00:00')<=30});
+    var ai7=(cr.series||[]).filter(function(x){return ageDays(x.day+'T00:00:00')<=7}).reduce(function(s,x){return s+x.search+x.user+x.training},0);
+    var ai30=s30.reduce(function(s,x){return s+x.search+x.user},0);
+    var exps=bundle.experiments||[],open=exps.filter(function(e){return e.status!=='done'}).length,due=exps.filter(function(e){return e.status==='due'}).length;
+    var ll=(bundle.llmo||[])[0];var VL={unknown:'모름',wrong:'틀리게 앎',correct:'맞게 앎'};
+    var k=[
+      {l:'AI 인용률 (질문별 최신)',v:n?Math.round(c/n*100)+'%':'—',s:n?c+'/'+n+' · 마지막 '+day(last):'인용 기록 없음',stale:!n||ageDays(last)>sd},
+      {l:'AI 봇 방문 · 최근 7일',v:cr.series&&cr.series.length?num(ai7):'—',s:cr.series&&cr.series.length?'AI 검색·열람 30일 '+num(ai30)+'회':'접속 로그 없음',stale:!cr.lastDay||ageDays(cr.lastDay+'T23:59:59')>7},
+      {l:'개선 실험',v:exps.length?open+'건 진행':'—',s:exps.length?(due?'재측정 대상 '+due+'건 · ':'')+'완료 '+(exps.length-open)+'건':'실험 없음',stale:false},
+      {l:'LLMO 최근 판정',v:ll?(VL[ll.verdict]||'—'):'—',s:ll?esc(ll.engine)+' · '+day(ll.checkedAt):'점검 기록 없음',stale:!ll||ageDays(ll.checkedAt)>92}
+    ];
+    $('mxKpis').innerHTML=k.map(function(x){return '<div class="mx-kpi'+(x.stale?' stale':'')+'"><span>'+esc(x.l)+'</span><b>'+esc(x.v)+'</b><i>'+x.s+(x.stale&&x.v!=='—'?' · 낡음':'')+'</i></div>'}).join('');
+
+    // 크롤러 차트
+    if(chart){chart.destroy();chart=null}
+    var canvas=$('mxCrawlChart');
+    if(s30.length&&window.Chart){
+      chart=new Chart(canvas.getContext('2d'),{type:'bar',data:{labels:s30.map(function(x){return x.day.slice(5)}),datasets:[
+        {label:'AI 검색 색인',data:s30.map(function(x){return x.search}),backgroundColor:'#378ADD',stack:'a'},
+        {label:'실시간 열람',data:s30.map(function(x){return x.user}),backgroundColor:'#1D9E75',stack:'a'},
+        {label:'학습용',data:s30.map(function(x){return x.training}),backgroundColor:'#cbd5e1',stack:'a'}]},
+        options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'bottom',labels:{boxWidth:10,font:{size:10}}},tooltip:{mode:'index',intersect:false}},scales:{x:{stacked:true,ticks:{font:{size:9},maxRotation:0,autoSkip:true}},y:{stacked:true,beginAtZero:true,ticks:{font:{size:9},precision:0}}}}});
+      var eng30=s30.reduce(function(s,x){return s+x.engine},0);
+      $('mxCrawlNote').textContent='검색엔진 봇(Googlebot·Bingbot·Yeti)은 규모가 달라 그래프에서 빼고 합계만 표시: 30일 '+num(eng30)+'회. 봇 이름은 위조될 수 있어 참고값입니다.';
+    }else{$('mxCrawlNote').textContent=''}
+    $('mxCrawlEmpty').hidden=!!chart;canvas.style.visibility=chart?'visible':'hidden';
+
+    // 엔진별 퍼널
+    // 방문 = 수집된 로그 기간 전체의 봇별 합계 (번들의 byBot)
+    var bots=cr.byBot||{},hasLog=!!(cr.series&&cr.series.length);
+    var rows=VENDORS.map(function(v){
+      var visits=hasLog?v.bots.reduce(function(s,b){return s+(bots[b]||0)},0):null;
+      var cites=(bundle.citations||[]).filter(function(x){var e=String(x.engine);return v.cite.indexOf(e)>=0||(v.cite.indexOf('api')>=0&&e.indexOf(':')<0)});
+      var cn=cites.length,cc=cites.filter(function(x){return x.cited}).length,lastC=cites.reduce(function(m,x){return x.checkedAt>m?x.checkedAt:m},'');
+      var ga=ga4Sessions(v.ga);
+      var dx,cls;
+      if(hasLog&&visits===0){dx='방문 없음 — robots.txt·색인 등록부터 점검';cls='bad'}
+      else if(!cn){dx='인용 기록 없음 — 대상 질문을 먼저 기록';cls=''}
+      else if(cc===0){dx='방문은 있으나 인용 안 됨 — 첫 문단·원출처·구조화 데이터 개선';cls='mid'}
+      else if(ga===0){dx='인용되지만 유입 없음 — 제목·첫 문장이 클릭을 부르는지 점검';cls='mid'}
+      else if(ga==null){dx='방문·인용 확인 — 유입은 GA4에서 따로 구분되지 않음';cls='good'}
+      else{dx='방문→인용→유입 연결됨 — 유지·확대';cls='good'}
+      return{v:v,visits:visits,cn:cn,cc:cc,lastC:lastC,ga:ga,dx:dx,cls:cls};
+    }).filter(function(r){return r.cn||r.visits||r.ga});
+    $('mxFunnel').innerHTML=rows.length?'<thead><tr><th>엔진</th><th>방문 (로그 기간)</th><th>인용</th><th>유입 ('+esc(ga4Label())+')</th><th>진단</th></tr></thead><tbody>'+rows.map(function(r){
+      var stale=r.cn&&ageDays(r.lastC)>sd;
+      return '<tr><td><b>'+esc(r.v.name)+'</b></td><td class="num">'+(r.visits==null?'—':num(r.visits))+(r.v.shareBot&&r.visits?'<br><small style="color:#94a3b8">Googlebot 공용</small>':'')+'</td><td class="num">'+(r.cn?Math.round(r.cc/r.cn*100)+'% <small style="color:#94a3b8">'+r.cc+'/'+r.cn+'</small>'+(stale?'<br><span class="mx-tag mid">낡음</span>':''):'—')+'</td><td class="num">'+(r.ga==null?'—':num(r.ga))+'</td><td><span class="mx-tag '+r.cls+'">'+esc(r.dx)+'</span></td></tr>'}).join('')+'</tbody>':'<tbody><tr><td class="mx-empty">표시할 엔진 데이터가 없습니다.</td></tr></tbody>';
+
+    // 실험
+    var SL={baseline:'기준선만',waiting:'재측정 대기',due:'재측정 대상',done:'완료'};
+    $('mxExps').innerHTML=exps.length?'<ul class="mx-list">'+exps.slice(0,6).map(function(e){
+      var d=e.resultTotal!=null&&e.baselineTotal!=null?e.resultTotal-e.baselineTotal:null;
+      return '<li><b>'+esc(e.name||'(이름 없음)')+'</b> <span class="mx-tag '+(e.status==='done'?'good':e.status==='due'?'mid':'')+'">'+esc(SL[e.status]||e.status)+'</span><br><small>기준선 '+day(e.baselineAt)+' '+esc(e.baselineTotal)+'점'+(e.dueAt?' · 재측정 예약 '+day(e.dueAt):'')+(d!=null?' · 재측정 '+esc(e.resultTotal)+'점 ('+(d>=0?'+':'')+d+')':'')+'</small></li>'}).join('')+'</ul>':'<p class="mx-empty">분석기에서 "기준선 기록"으로 실험을 시작하세요.</p>';
+
+    // LLMO
+    var VC={unknown:'',wrong:'bad',correct:'good'};
+    var lr=bundle.llmo||[];
+    $('mxLlmo').innerHTML=lr.length?'<ul class="mx-list">'+lr.slice(0,6).map(function(x){return '<li><span class="mx-tag '+(VC[x.verdict]||'')+'">'+esc(VL[x.verdict]||x.verdict)+'</span> '+esc(x.engine)+' — '+esc(x.question)+' <small>'+day(x.checkedAt)+'</small></li>'}).join('')+'</ul>'+(ageDays(lr[0].checkedAt)>92?'<p class="mx-note">⚠️ 마지막 점검이 한 분기를 넘었습니다. 다시 점검하세요.</p>':''):'<p class="mx-empty">웹 검색을 끈 모델에 "매체명이 뭐야?"를 묻고 분석기에 기록하세요. 분기마다 반복합니다.</p>';
+  }
+
+  // ── 불러오기 ──
+  $('mxFetch').addEventListener('click',function(){
+    var base=($('mxServer').value||'http://localhost:3000').trim().replace(/\/+$/,'');
+    try{localStorage.setItem(STORE,base)}catch(e){}
+    setStatus('불러오는 중… '+esc(base));
+    fetch(base+'/api/measure/export').then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()})
+      .then(function(b){load(b,'server')})
+      .catch(function(e){setStatus('분석기 서버에 연결하지 못했습니다('+esc(e.message)+'). 서버가 켜져 있는지 확인하거나, 분석기의 <b>대시보드용 내보내기</b> 파일을 올려 주세요.','err')});
+  });
+  $('mxBundleBtn').addEventListener('click',function(){$('mxBundleFile').click()});
+  $('mxLogBtn').addEventListener('click',function(){$('mxLogFile').click()});
+  $('mxBundleFile').addEventListener('change',function(ev){var f=ev.target.files[0];if(!f)return;f.text().then(function(t){try{load(JSON.parse(t),'file')}catch(e){setStatus('파일을 읽지 못했습니다: '+esc(e.message),'err')}});ev.target.value=''});
+  $('mxLogFile').addEventListener('change',function(ev){var f=ev.target.files[0];if(!f)return;setStatus('로그 집계 중… (브라우저 안에서 처리)');
+    f.text().then(function(t){var p=parseLog(t);if(!p.matched){setStatus(esc(f.name)+': '+num(p.lines)+'줄에서 AI·검색 봇 방문을 찾지 못했습니다. Apache·Nginx 형식 접속 로그인지 확인하세요.','warn');return}
+      var base=bundle||{format:'geo-measure-bundle'};load(Object.assign({},base,{crawlers:p.series}),'log');
+      setStatus(esc(f.name)+': '+num(p.lines)+'줄 중 봇 방문 '+num(p.matched)+'건 집계 (브라우저 안에서 처리, 외부 전송 없음)'+(bundle.engines&&bundle.engines.length?'':' · 인용 기록은 분석기 내보내기 파일을 함께 올리면 표시됩니다'))});ev.target.value=''});
+
+  // GA4 CSV를 새로 분석하면 유입 칸 갱신
+  document.addEventListener('click',function(e){var t=e.target;if(!bundle||!t||!t.closest)return;if(t.closest('#csvAnalyze,#csvReset,[data-platform-view]'))setTimeout(render,300)});
+  window.geoMeasureLoad=load;   // 테스트·확장용
+})();
+</script>
+
 </body>
 </html>
